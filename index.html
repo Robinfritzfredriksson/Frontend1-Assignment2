@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="application/javascript" src="/JavaScript/script.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+
+  <div  id="myDIV" class="header">
+    <label for="myInput">Add todo:</label><br><br>
+    <input type="text" id="myInput" onkeypress="return todoEnterKeyPressed(event)" placeholder="Write...">
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="date" id="myDate" name="myDate">
+    <script> localDate();</script>
+    <select id="selectedTodoCategory" name="selectedTodoCategory">
+      <option value="Household">Household</option>
+      <option value="work">Work</option>
+    </select><br><br><br><br>
+    <span onclick="newElement()" id="myBtn" class="addBtn">Add</span>
+    <br>
+    <br>
+    <br>
+    <label for="myInput">search:</label>
+    <br>
+    <br>
+    <input type="text" id="myFilterInput" onkeyup="myFilterFunction()" placeholder="Filter...">
+    <br>
+    <br>
+    <br>
+    <div id="divCategory" action="">
+      <label class="label2" for="All"><input  class="radioSelect" type="radio" id="All" name="todoCategory" value="ALL" checked="checked" onclick="myFilterFunction()">All</label>
+      <label class="label3" for="Household"><input  class="radioSelect" type="radio" id="Household" name="todoCategory" value="HOUSEHOLD" onclick="myFilterFunction()">Household</label>
+      <label class="label4"  for="Work"><input  class="radioSelect" type="radio" id="Work" name="todoCategory" value="WORK" onclick="myFilterFunction()">Work</label>
+    </div>
+    <img class="imgstyle" widht="200" height="200" src="/img/checklist.png" alt="ToDo">
+  </div>
+  <br>
+  <br>
+  <h2>Todo:</h2>
+  <ul id="myUL">
+  </ul>
+  <script type="application/javascript" src="/JavaScript/script.js"></script>
+</body>
+</html>

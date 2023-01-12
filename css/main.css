@@ -1,0 +1,175 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(238, 149, 213);
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  .outOfDateLi
+  {
+    color: red;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: rgb(24, 64, 104);
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgb(238, 149, 213);
+    padding: 30px 40px;
+    color: rgb(24, 64, 104);
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 10%;
+    background: #f7fbf9;
+    color: rgb(24, 64, 104);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  label 
+  {
+    float: left;
+    font-size: 20px;
+  }
+
+  .label2
+  {
+    float: left;
+    font-size: 30px;
+    color: aqua;
+
+  }
+  .label3
+  {
+    float: left;
+    font-size: 30px;
+    color: greenyellow;
+
+  }
+  .label4
+  {
+    float: left;
+    font-size: 30px;
+    color: yellow;
+
+  }
+
+
+
+
+  #myUL li a {
+    text-decoration: none; /* Remove default text underline */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+  #formCategory 
+  {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  #myDate 
+  {
+    margin: 0;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  #selectedTodoCategory 
+  {
+    margin-left: 10px;
+    width: 10%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  .radioSelect
+  {
+    float: none;
+  }
+
+  .imgstyle
+  {
+    float:right;
+  }
